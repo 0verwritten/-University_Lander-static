@@ -1,0 +1,195 @@
+ :root{
+   /* Colors */
+
+  --black: rgba(0, 5, 9, 1);
+  --peachy: rgba(233, 40, 40, 1);
+  --transparent-fire-brick: rgba(200, 0, 0, 0.2);
+  --transparent-fire-brick-2: rgba(200, 0, 0, 0);
+  --transparent-white: rgba(255, 255, 255, 0.8);
+  --white: rgba(255, 255, 255, 1);
+
+  /* Typographies */
+
+  --font-family:'Montserrat', sans-serif;
+  --text-weight: 400;
+  --line-height: normal;
+
+
+  --h3-size: 1.6vw;
+  
+
+  --h1-size: 3.8vw;
+  --h1-letter-spacing:  .08em;
+
+  --h4-size: 1.4vw;
+
+}
+
+
+ body{
+  margin: 0px;
+  background-color: var(--black);
+
+  font-family: var(--font-family);
+  text-weight: var(--text-weight);
+  line-height: var(--line-height);
+  color: var(--white);
+  font-size: var(--h3-size);
+}
+
+p{
+  margin-top: 0;
+  margin-bottom: .15em;
+}
+
+h1{
+  font-size: var(--h1-size);
+  letter-spacing: var(--h1-letter-spacing);
+
+  font-weight: var(--text-weight);
+}
+       /*Menu*/
+
+.TopMenu {
+  padding: 0.5% 10%;
+  display: flex;
+  justify-content: center;
+  height: 3vw;
+  align-self: stretch;
+}
+
+.TopMenu span:hover{
+  border-bottom: 0.15em solid var(--peachy);
+}
+
+.MenuEl{
+  display: flex;
+  align-items: center;
+
+  width: 20%;
+  letter-spacing: 1.89px;
+  font-size: var(--h4-size);
+}
+
+.MenuElRight{
+  width: auto;
+  margin-left: auto;
+}
+
+#LangOne{
+
+margin-right: 0.6em;
+margin-left: auto;
+}
+
+#LangTwo{
+
+margin-left: 0.6em;
+margin-right: auto;
+}
+
+      /*SideNavigation*/
+
+ .SideNavigation{
+  width: auto;
+
+  position: fixed;
+  right: 0;
+  top: -2%;
+
+  z-index: 2;
+}
+
+@media screen and (min-aspect-ratio: 8/5) {
+   .SideNavigation{
+  height: 100vh;
+}
+} 
+
+@media screen and (max-aspect-ratio: 8/5) {
+  .SideNavigation{
+  height: 35em;
+}
+} 
+
+
+       /*Logo*/
+
+.LogoIcon{
+    display: flex;
+    justify-content: center;
+}
+.LogoIcon img{
+  height: auto;
+  width: 3.6em;
+}
+      /*BgImage*/
+
+.BgImage{
+  width: 50vw;
+  height: auto;
+  position: absolute;
+  left: calc(70vw - 30em / 2);
+
+  z-index: 1;
+}
+      /*Slogan*/
+
+.Slogan{
+  margin-top: 1.5em;
+  padding-left: 5%; 
+
+  margin-bottom: 0; 
+}  
+
+.Slogan p:first-letter {
+  color: var(--peachy);
+
+}   
+
+.SloganLineTwo{
+  margin-left: 3%;
+}
+
+.SloganLineThree{
+  margin-left: 6%;
+  margin-bottom: 0;
+}
+
+    /*RedPlaneBlur*/
+
+.RedPlaneBlur{
+  width: 22em;
+  height: 12em;
+  position: relative;
+  margin-left: 30%;
+  
+  text-align: center;
+  font-size: var(--h3-size);
+  
+  background: linear-gradient(
+    181deg,
+    var(--transparent-fire-brick) -3%,
+    var(--transparent-fire-brick-2) 99%
+  );
+  backdrop-filter: blur(20px);
+
+  z-index: 2;
+}
+
+.RedPlaneBlur span{
+    position:absolute;
+    width:100%;
+    bottom: 0;
+
+    margin-left: -50%;
+
+
+}
+
+
+
+
+
+
+
