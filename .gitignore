@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+## change log to write down all the changes
+change log.md
+
 # User-specific files
 *.rsuser
 *.suo
