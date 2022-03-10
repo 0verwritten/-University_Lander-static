@@ -51,7 +51,7 @@ h1{
 	padding: 0.5% 10%;
 	width:auto;
 	display: grid;
-	grid-template-columns: 45% 10% 45%;
+	grid-template-columns: 40% 20% 40%;
 	/* grid-template-columns: auto auto auto 20% 20%; */
 	justify-content:space-between;
 	height: 3vw;
@@ -69,10 +69,14 @@ h1{
 	border-bottom: 0.15em solid var(--peachy);
 }
 
-.TopMenu > div{
-	display: flex;
+.TopMenu div{
 	align-items: center;
-	justify-content: space-around;
+	display: grid;
+	grid-template-columns: 45% 55%;
+}
+
+.TopMenu div > *{
+	margin:auto;
 }
 
 .MenuEl{
@@ -80,6 +84,12 @@ h1{
     font-size: var(--h4-size);
 }
 
+div.MenuLang{
+	justify-content:center;
+}
+.MenuLang .MenuEl{
+	margin: 0 0.5em;
+}
 
 
 	/*SideNavigation*/
@@ -135,7 +145,7 @@ h1{
     margin-bottom: 0; 
 }    
 
-.Slogan p:not(:nth-child(1)):first-letter {
+.Slogan p:first-letter {
     color: var(--peachy);
 }
 
